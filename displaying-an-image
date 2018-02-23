@@ -8,3 +8,5 @@ b,g,r = cv2.split(img)
 img2 = img[:,:,::-1]
 cv2.imshow('bgr image',img) # expects true color
 cv2.imshow('rgb image',img2) # expects distorted color
+cv2.waitKey(0)
+cv2.destroyAllWindows()
