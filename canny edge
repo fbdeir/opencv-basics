@@ -6,10 +6,10 @@ img = cv2.imread('C:\\Users\\MSE\\Downloads\\IMG_0725.jpg', 0)
 plt.subplot(122),plt.imshow(img)
 
 edges = cv2.Canny(img,100,200)
-image, contours, hierarchy = cv2.findContours(edges,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-img2 = cv2.drawContours(edges, contours, 3, (0,255,0), 3)
+#image, contours, hierarchy = cv2.findContours(edges,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
+#img2 = cv2.drawContours(edges, contours, 3, (0,255,0), 3)
 
-plt.subplot(121),plt.imshow(img2)
+plt.subplot(121),plt.imshow(edges)
 
 plt.show()
 cv2.waitKey(0)
